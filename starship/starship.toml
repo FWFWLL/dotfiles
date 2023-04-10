@@ -1,0 +1,43 @@
+format = """
+$time\
+[](bg:#45475A fg:#89B4FA)\
+[  ](bg:#45475A fg:#1793D1)\
+[](bg:#1E1E2E fg:#45475A)\
+$rust\
+$nodejs\
+$python\
+$git_branch\
+$directory\
+[ ](fg:#1E1E2E)\
+"""
+
+add_newline = false
+
+[time]
+disabled = false
+time_format = "%R"
+style = "bg:#89B4FA fg:#181825"
+format = "[[ $time ]($style)]($style)"
+
+[rust]
+style = "bg:#1E1E2E fg:#CE412B"
+symbol = "󱘗 "
+format = "[ $symbol$version [](bg:#1E1E2E fg:#CDD6F4)]($style)"
+
+[nodejs]
+style = "bg:#1E1E2E fg:#6CC24A"
+format = "[ $symbol$version [](bg:#1E1E2E fg:#CDD6F4)]($style)"
+
+[python]
+style = "bg:#1E1E2E fg:#4584B6"
+symbol = " "
+format = '[ $symbol${version} (\($virtualenv\) )[](bg:#1E1E2E fg:#CDD6F4)]($style)'
+
+[git_branch]
+style = "bg:#1E1E2E fg:#CDD6F4"
+format = "[ $symbol$branch(:$remote_branch) ]($style)"
+
+[directory]
+style = "bg:#1E1E2E fg:#CDD6F4"
+format = "[ $path ]($style)"
+truncation_length = 1
