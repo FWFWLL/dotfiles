@@ -15,10 +15,19 @@ zle_highlight=("paste:none")
 # Beeping is annoying
 unsetopt BEEP
 
+# Remove suspending
+set +m
+
 # Key bindings
 bindkey "^[[H" beginning-of-line
 bindkey "^[[F" end-of-line
 bindkey "^[[3~" delete-char
+
+# Remove bindings
+bindkey -r "^H"
+bindkey -r "^J"
+bindkey -r "^K"
+bindkey -r "^L"
 
 # Completion
 autoload -Uz compinit && compinit

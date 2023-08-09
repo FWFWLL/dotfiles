@@ -7,3 +7,5 @@ nvm/
 !nvim/
 !starship/starship.toml
 !zsh/.zshrc
+!tmux/tmux.conf
+

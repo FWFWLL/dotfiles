@@ -1,8 +1,8 @@
 format = """
 $time\
-[](bg:#45475A fg:#89B4FA)\
-[  ](bg:#45475A fg:#1793D1)\
-[](bg:#1E1E2E fg:#45475A)\
+[](bg:#313244 fg:#89B4FA)\
+[  ](bg:#313244 fg:#1793D1)\
+[](bg:#1E1E2E fg:#313244)\
 $rust\
 $nodejs\
 $python\
@@ -21,7 +21,7 @@ format = "[[ $time ]($style)]($style)"
 
 [rust]
 style = "bg:#1E1E2E fg:#CE412B"
-symbol = "󱘗 "
+symbol = " "
 format = "[ $symbol$version [](bg:#1E1E2E fg:#CDD6F4)]($style)"
 
 [nodejs]
