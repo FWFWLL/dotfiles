@@ -44,7 +44,7 @@ zle -N down-line-or-beginning-search
 # Colors
 autoload -Uz colors && colors
 
-# IDKE
+# Alias
 alias cls="clear"
 alias ls="exa -lBa --icons --group-directories-first --no-user --no-time"
 alias nv="nvim"
@@ -63,7 +63,8 @@ source /usr/share/nvm/init-nvm.sh
 # Initialize Starship
 eval "$(starship init zsh)"
 
+[ -f "/home/ffl/.ghcup/env" ] && source "/home/ffl/.ghcup/env" # ghcup-env
+
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
-
